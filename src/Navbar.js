@@ -13,8 +13,12 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
         <div className='navbar-container'>
-            <img className='react-logo' src={Logo} alt="" />
-            <Link to='/' className='navbarLogo'>MyWebsite</Link>
+            <div className='navbar-left'>
+                <img className='react-logo' src={Logo} alt="" />
+                <Link to='/' className='navbarLogo'>
+                    MyWebsite
+                </Link>
+            </div>
             <div className='menu-icon' onClick={toggleMenu}>
                 <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
             </div>
